@@ -6,6 +6,7 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.6"
 gem "bootstrap-sass", "3.4.1"
 gem "sassc-rails",     "2.1.2"
+gem 'devise'
 
 gem "sprockets-rails"
 
