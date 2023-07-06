@@ -8,3 +8,4 @@
 <%= link_to 'Edycja', edit_pin_path(@pin) %>
 <% end %>
 <%= link_to 'Wstecz', pins_path %>
+<%= button_to "Usuń", @pin, method: :delete, class:"btn btn-dark" %>
