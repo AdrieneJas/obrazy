@@ -2,13 +2,13 @@
 
 <h1>Lista pinów</h1>
 
-<div id="pins">
-  <% @pins.each do |pin| %>
-    <%= render pin %>
-    <p>
-      <%= link_to "Show this pin", pin %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "Nowy pin", new_pin_path %>
+<% @pins.each do |pin| %>
+<tr>
+<td><%= pin.description %></td>
+<td><%= link_to 'Wyświetl', pin %></td>
+<% if pin.user == current_user %>
+<td><%= link_to 'Edytuj', edit_pin_path(pin) %></td>
+<td><%= link_to 'Usuń', pin, method: :delete, data: { confirm: 'Jesteś pewien?' } %></td>
+<% end %>
+</tr>
+<% end %>

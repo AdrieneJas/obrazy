@@ -2,9 +2,9 @@
 
 <%= render @pin %>
 
-<div>
-  <%= link_to "Edit this pin", edit_pin_path(@pin) %> |
-  <%= link_to "Back to pins", pins_path %>
+<%= link_to "Nowy pin", new_pin_path %>
 
-  <%= button_to "Usuń pin", @pin, method: :delete %>
-</div>
+<% if @pin.user == current_user %>
+<%= link_to 'Edycja', edit_pin_path(@pin) %>
+<% end %>
+<%= link_to 'Wstecz', pins_path %>

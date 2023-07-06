@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   resources :pins
+
+    devise_scope :user do
+    get '/users/sign_out', to: 'devise/sessions#destroy'
+  end
+
   devise_for :users
   root 'home#index'
   get 'home/about'
