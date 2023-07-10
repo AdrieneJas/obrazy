@@ -8,6 +8,7 @@ gem "bootstrap-sass", "3.4.1"
 gem "sassc-rails",     "2.1.2"
 gem 'devise'
 
+gem "image_processing", ">= 1.2"
 gem "sprockets-rails"
 
 gem "sqlite3", "~> 1.4"
