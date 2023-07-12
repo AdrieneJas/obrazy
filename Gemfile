@@ -10,13 +10,14 @@ gem 'devise'
 
 gem "image_processing", ">= 1.2"
 gem "sprockets-rails"
-
+gem 'webpacker'
 gem "sqlite3", "~> 1.4"
-
+gem 'jquery-rails'
 gem "puma", "~> 5.0"
-
+gem 'jquery-turbolinks'
+gem 'masonry-rails'
 gem "importmap-rails"
-
+gem 'turbolinks'
 gem "turbo-rails"
 
 gem "stimulus-rails"
